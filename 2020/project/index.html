@@ -1,47 +1,51 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 
 <head>
-  <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-  <meta charset="utf-8">
-  <meta name="keywords" content="дота, максим, я">
-  <meta name="description" content="Школа доты">
-  <meta name="autor" content="Дмитрий Мандрин">
-  <title>Школа доты от Димы</title>
-  <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Регистрация</title>
+   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+   <link rel="stylesheet" href="style-2.css">
 </head>
 
 <body>
-  <div class="container">
-    <header class="site-header">
-      <h1>Учитель дмитрий</h1>
-      <p>Обучение начинающих дотеров</p>
-      <img src="img/keks.png">
-    </header>
+   <div class="container">
+      <header>
+         <div>
+            <h1 class="h1">Регистрация на сайте</h1>
 
-    <section class="features">
-      <h2>Почему я?</h2>
-      <p class="feature-kitten">Потому что, в свои 13 я выйграл TI</p>
-      <p class="feature-train">Потому что, ебал в миду Sumaila и Miracla</p>
-      <p class="feature-cat">Потому что, пью пиво каждую субботу)</p>
-    </section>
 
-    <section class="skills">
-      <h2>Чему вы научитесь у меня?</h2>
-      <ul class="skills-list">
-        <li class="skills-item">Делать кувырок вперед на бетоне</li>
-        <li class="skills-item standart">Курить 20 сижек в минуту</li>
-        <li class="skills-item standart">Открывать дверь головой</li>
-        <li class="skills-item vip">Зарабатывать в районе 200 000$</li>
-        <li class="skills-item vip">Плавать</li>
-      </ul>
-    </section>
+            <form action="#" method="POST" enctype="multipart/form-data">
+               <input class="text" required="" type="text" name="login" placeholder="@mail">
+               <input class="password" required type="password" name="parol" placeholder="password">
 
-    <footer class="site-footer">
-      <p>© Максим, 2020</p>
-      <p>Мой телефон +79992346783</p>
-    </footer>
-  </div>
+
+               <div class="ranked">
+                  <label class="label">Твой ранг</label>
+                  <select name="color">      
+                     <option value="red">Страж</option>
+                     <option selected value="pink">Рыцарь</option>
+                     <option value="yellow">Герой</option>
+                  </select>
+               </div>
+
+               <div class="checkbox">
+                  <input class="checkbox" type="checkbox" required />
+                  <label>Я соглашаюсь с условиями обработки персональных данных.</label>
+               </div>
+
+
+               <input class="button button1" type="submit" value="Войти" name="buttonreg" onClick="but1()" />
+               <script>
+                  function but1() {
+                     window.location = "index.html"
+                  }
+               </script>
+            </form>
+
+      </header>
+   </div>
 </body>
 
 </html>
