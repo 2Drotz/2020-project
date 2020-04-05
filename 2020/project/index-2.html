@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Регистрация</title>
+   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
+   <link rel="stylesheet" href="style-2.css">
+</head>
+
+<body>
+   <div class="container">
+      <header>
+         <div>
+            <h1 class="h1">Регистрация на сайте</h1>
+
+
+            <form action="#" method="POST" enctype="multipart/form-data">
+               <input class="text" required="" type="text" name="login" placeholder="@mail">
+               <input class="password" required type="password" name="parol" placeholder="password">
+
+
+               <div class="ranked">
+                  <label class="label">Твой ранг</label>
+                  <select name="color">      
+                     <option value="red">Страж</option>
+                     <option selected value="pink">Рыцарь</option>
+                     <option value="yellow">Герой</option>
+                  </select>
+               </div>
+
+               <div class="checkbox">
+                  <input class="checkbox" type="checkbox" required />
+                  <label>Я соглашаюсь с условиями обработки персональных данных.</label>
+               </div>
+
+
+               <input class="button button1" type="submit" value="Войти" name="buttonreg" onClick="but1()" />
+               <script>
+                  function but1() {
+                     window.location = "index.html"
+                  }
+               </script>
+            </form>
+
+      </header>
+   </div>
+</body>
+
+</html>
