@@ -31,6 +31,16 @@ h2 {
   padding-left: 20px;
   color: #FFFFFF;
 }
+.registri{
+  text-align: center;
+  color: red;
+  font-size: 15px;
+  outline: none;
+  
+}
+.registri :hover{
+  text-decoration: none;
+}
 
 .standart {
   
@@ -85,7 +95,7 @@ h2 {
 }
 
 .skills-list {
-  padding: 40px;
+  padding: 5px 40px;
   list-style: none;
 }
 
@@ -93,4 +103,35 @@ h2 {
   display: flex;
   justify-content: space-between;
   color: #999999;
+}
+
+.menu input{
+  display: inline-block;
+  text-align: center;
+  line-height: 36px;
+  border: 2px solid #4c1c12;
+  padding: 5px;
+  width: 157px;
+  background-color: #6f1c12;
+  color: aliceblue;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+}
+
+.button1:hover {
+  background-color: #4c1ca2;
+  color: white;
+  border: 1px solid white;
+}
+
+.button21:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid white;
+}
+.button31:hover {
+  background-color: red;
+  color: white;
+  border: 1px solid white;
 }

@@ -109,6 +109,7 @@
   -webkit-transition-duration: 0.4s; /* Safari */
   transition-duration: 0.4s;
   cursor: pointer;
+  outline: none;
 }
 
 .button1 {
