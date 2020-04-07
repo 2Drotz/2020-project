@@ -4,7 +4,8 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #FFFFFF;
-  background: #000000 url("img/фон.png")  no-repeat 50% 0;
+  
+  background: #080101 url("img/фон.png")  no-repeat 50% 0;
   
 }
 
@@ -53,6 +54,16 @@ h2 {
   color: #FFFFFF;
 }
 
+.photo{
+  position: fixed;
+ margin-left: 450px;
+}
+
+.vk{
+  position: fixed;
+  margin: px 350px 0 0;
+
+}
 .container {
   width: 480px;
   margin: 0 auto;
@@ -60,7 +71,6 @@ h2 {
 }
 
 .site-header img {
-  display: block;
   margin: 0 auto;
 }
 
@@ -120,18 +130,18 @@ h2 {
 }
 
 .button1:hover {
-  background-color: #4c1ca2;
+  background-color: #9b291d;
   color: white;
-  border: 1px solid white;
+  border: 1px solid 4c1c12;
 }
 
 .button21:hover {
-  background-color: red;
+  background-color: #9b291d;
   color: white;
-  border: 1px solid white;
+  border: 1px solid #4c1c12;
 }
 .button31:hover {
-  background-color: red;
+  background-color: #9b291d;
   color: white;
-  border: 1px solid white;
+  border: 1px solid #4c1c12;
 }

@@ -1,0 +1,24 @@
+body{
+   color: white;
+}
+.header {
+   height: 200px;
+   background: red;
+   font-size: 40px;
+}
+.main {
+   min-height: 450px;
+   background-color: green;
+
+}
+.footer {
+   margin-top: 5px;
+   height: 160px;
+   background-color: blue;
+}
+.video{
+   margin: 10px;
+}
+.photo{
+   
+}
