@@ -31,6 +31,6 @@ function draw() {
 
    if (weCanDraw) {
       // если рисовать можно — рисуем
-      text('💩', mouseX, mouseY);
+      text('💷', mouseX, mouseY);
    }
 }
