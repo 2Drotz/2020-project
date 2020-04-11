@@ -1,6 +1,6 @@
 body {
   padding: 0;
-  font-family: "Arial", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #FFFFFF;
@@ -56,12 +56,13 @@ h2 {
 
 .photo{
   position: fixed;
- margin-left: 450px;
+ margin-left: 420px;
 }
 
 .vk{
   position: fixed;
-  margin: px 350px 0 0;
+  margin: 0 350px 0 0;
+  
 
 }
 .container {
@@ -115,7 +116,7 @@ h2 {
   color: #999999;
 }
 
-.menu input{
+/*.menu input{
   display: inline-block;
   text-align: center;
   line-height: 36px;
@@ -127,21 +128,49 @@ h2 {
   cursor: pointer;
   border-radius: 5px;
   outline: none;
+}*/
+
+.button input {
+  width: 140px;
+  height: 40px;
+  color: white;
+  display: inline-block;
+  text-align: center;
+  border: 2px solid white;
+  background-color: black;
+  /* сложная комбинация, чтобы кнопка была по центру экрана */
+  outline: none;
+  /* приятно — плавные переходы при наведении */
+  transition: all .4s ease;
+  font-family: 'Inter', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
 }
+.button1{
+  margin-right: 20px;
+}
+.button2{
+  margin-right: 20px;
+}
+
 
 .button1:hover {
-  background-color: #9b291d;
-  color: white;
-  border: 1px solid 4c1c12;
+  cursor: pointer;
+  box-shadow: 5px 5px #A52A2A;
+  background-color: white;
+  color: black;
+}
+.button2:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px #A52A2A;
+  background-color: white;
+  color: black;
+}
+.button3:hover {
+  cursor: pointer;
+  box-shadow: 5px 5px #A52A2A;
+  background-color: white;
+  color: black;
+
 }
 
-.button21:hover {
-  background-color: #9b291d;
-  color: white;
-  border: 1px solid #4c1c12;
-}
-.button31:hover {
-  background-color: #9b291d;
-  color: white;
-  border: 1px solid #4c1c12;
-}
