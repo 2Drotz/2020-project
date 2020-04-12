@@ -68,7 +68,7 @@ h2 {
 }
 .container {
   width: 500px;
-  padding: 25px;
+  padding: 25px 0 25px 25px;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.3)
 
@@ -93,18 +93,18 @@ h2 {
   background-position: center top;
 }
 
-.feature-kitten {
+.feature-aegis {
   padding-top: 60px;
   font-style: normal;
   background-image: url("../img/аегис.png");
 }
 
-.feature-cat {
+.feature-beer {
   padding-top: 60px;
   background-image: url("../img/пиво.png");
 }
 
-.feature-train {
+.feature-mid {
   padding-top: 60px;
   background-image: url("../img/mid.png");
 }
@@ -117,7 +117,7 @@ h2 {
 .site-footer {
   display: flex;
   justify-content: space-between;
-  color: #999999;
+  color: #eee;
 }
 
 /*.menu input{
@@ -141,7 +141,7 @@ h2 {
   display: inline-block;
   text-align: center;
   border: 2px solid white;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.5);
   /* сложная комбинация, чтобы кнопка была по центру экрана */
   outline: none;
   /* приятно — плавные переходы при наведении */
@@ -160,19 +160,19 @@ h2 {
 
 .button1:hover {
   cursor: pointer;
-  box-shadow: 5px 5px #A52A2A;
+  box-shadow: 5px 5px #298cad;
   background-color: white;
   color: black;
 }
 .button2:hover {
   cursor: pointer;
-  box-shadow: 5px 5px #A52A2A;
+  box-shadow: 5px 5px #298cad;
   background-color: white;
   color: black;
 }
 .button3:hover {
   cursor: pointer;
-  box-shadow: 5px 5px #A52A2A;
+  box-shadow: 5px 5px #298cad;
   background-color: white;
   color: black;
 
