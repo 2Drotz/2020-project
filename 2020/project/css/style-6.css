@@ -16,7 +16,7 @@ button {
  }
  button:hover {
    cursor: pointer;
-   box-shadow: 4px 4px Gold;
+   box-shadow: 4px 4px green;
  }
  
  .clicked {
