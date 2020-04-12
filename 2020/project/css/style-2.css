@@ -67,9 +67,10 @@ h2 {
 
 }
 .container {
-  width: 480px;
+  width: 500px;
+  padding: 25px;
   margin: 0 auto;
-  background-image: url("../img/фон.png");
+  background-color: rgba(0, 0, 0, 0.3)
 
 
 }
