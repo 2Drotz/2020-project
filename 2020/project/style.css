@@ -1,131 +1,261 @@
-.h1{
-  font-family:Lobster, cursive;
-   padding: 0px;
-   font-size: 35px;
-   color: red;
-   margin: 10px 0;
+/* -----  google Font  -----*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700');
 
-}
-.body{
-   font-family: Lobster, cursive;
-  
-   line-height: 10px;
-   font-size: 18px;
-   color: white;
-}
-.text{
-  border-radius: 1px;
-  padding: 5px;
-  border: none;
-  border-bottom: 2px solid red;
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-.text :focus{
-  
-  border-bottom: 2px solid springgreen;
+body {
+ margin: 0;
+ padding: 0;
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 16px;
+ background-image: url('img/6.jpg');
+ -webkit-background-size: cover;
+ background-size: cover;
 }
 
-
-.checkbox{
-  font-weight: large;
-  text-align: left;
-  border-radius: 15px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+/* -----  Выравнивание по середине  -----*/
+.dws-wrapper {
+ display: flex;
+ height: 100vh;
+ justify-content: center;
+ align-items: center;
 }
 
-.ranked {
-  font-weight: large;
-  margin-left: 125px;
-  width: 500px;
-  position: relative;
-  margin-bottom: 1rem;
+.dws-form {
+ background-color: rgba(54, 210, 255, 0.5);
+ padding: 5px;
+}
+.dws-form a {
+ text-decoration: none;
+ transition: .5s;
+ color: #298cad;
+}
+.dws-form a:hover {
+ color: #36d2ff;
+}
+.dws-form ul {
+ list-style: none;
+ padding: 0;
+ margin: 0;
+}
+.dws-form input {
+ display: block;
+ width: 100%;
+}
+.tab-form {
+ background-color: #fff;
+ display: none;
+ padding: 30px 20px 20px;
+}
+.tab-form.active,
+#tab-1:checked ~ #form-1,
+#tab-2:checked ~ #form-2 {
+ display: block;
+}
+label.tab {
+ color: #ffffff;
+ font-weight: 600;
+ padding: 15px;
+ display: inline-block;
+ border-radius: 3px 3px 0 0;
+ margin-bottom: -1px;
+ cursor: pointer;
+}
+label.tab.active,
+input[name="tabs"]:checked + label {
+ background-color: #fff;
+ color: #1d5f75;
+}
+input[name="tabs"] {
+ display: none;
 }
 
-.ranked:after {
-  content: "";
-  display: block;
-  border-style: solid;
-  border-width: 6px 5px 0 5px;
-  border-color: #000 transparent transparent transparent;
-  pointer-events: none;
-
-  position: absolute;
-  top: 50%;
-  right: 260px;
-  z-index: 1;
-  margin-top: 5px;
+/* Иконки во вкладках */
+.tab::before {
+ content: '\f090';
+ font-family: 'FontAwesome', sans-serif;
+ font-size: 24px;
+ margin-right: 11px;
+ font-weight: normal;
+}
+.tab[for*='2']::before {
+ content: '\f234';
 }
 
-.ranked select {
-  display: block;
-  width: 50%;
-  padding: .75rem 2.5rem .75rem 1rem;
-  background: none;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  -webkit-appearance: none;
-  appearance: none;
-
-  font-family: inherit;
-  font-size: 1rem;
-  color: #444;
+/* Формы */
+.input {
+ font-size: 16px;
+ border: 2px solid #e9eaea;
+ padding: 12px 14px;
+ box-sizing: border-box;
+ margin-bottom: 22px;
+ color: #1e8da6;
+ outline: none;
 }
 
-.ranked select:focus {
-  outline: 0;
-  border-color: red;
+::-webkit-input-placeholder {color:#c4c9c9;}/* webkit */
+::-moz-placeholder          {color:#298cad;}/* Firefox 19+ */
+:-moz-placeholder           {color:#298cad;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#298cad;}/* IE */
+
+.social {
+ display: flex;
+ justify-content: space-between;
+ font-size: 24px;
+}
+.social a {
+ width: 40px;
+ height: 40px;
+ display: block;
+ line-height: 40px;
+ text-align: center;
+}
+.social + a {
+ margin-top: 10px;
+ display: block;
+ font-size: 12px;
+ text-align: center;
+}
+.fa{
+transition: all 0.3s;
+color: black;
+}
+.fa-youtube:hover{
+  color: red;
+}
+.fa-instagram:hover{
+  color: darkviolet;
+}
+.fa-facebook:hover{
+  color: cornflowerblue;
+
+}
+.fa-twitter:hover{
+  color: #33d3fe;
+}
+.fa-vk:hover{
+  color: rgb(8, 117, 241);
 }
 
-.label{
-  font-family:Lobster, cursive; Font-size: 14px;
-  width: 40px;
-  padding-right: 250px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-  font-weight: normal;
+
+/* Плавающий текст */
+.box-input {
+ position: relative;
+}
+.box-input input {
+ border: none;
+ border-bottom: 2px solid #e9eaea;
+ padding: 10px 0;
+}
+.box-input label {
+ position: absolute;
+ top: 0;
+ left: 0;
+ padding-top: 10px;
+ color: #c4c9c9;
+ transition: .5s;
+ pointer-events: none;
+}
+.box-input input:focus ~ label,
+.box-input input:valid ~ label {
+ top: -20px;
+ font-size: 12px;
+ color: #33d3fe;
 }
 
-.password{
-  padding: 5px;
-  border: none;
-  border-bottom: 2px solid red;
-  font-size: 20px;
-  margin-bottom: 25px;
-  border-radius: 1px;
+/* Эффект кнопки */
+a.button {
+ background: #298cad;
+ color: #ffffff;
+ font-size: 18px;
+ text-transform: uppercase;
+ display: block;
+ text-align: center;
+ line-height: 46px;
+ margin-top: 30px;
+ margin-bottom: 10px;
+ position: relative;
+ z-index: 1;
+ overflow: hidden;
+ border-bottom: 4px solid #36d2ff;
 }
-.button {
-  background-color: red; /* Green */
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  border: none;
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 5px 5px;
-  -webkit-transition-duration: 0.4s; /* Safari */
-  transition-duration: 0.4s;
-  cursor: pointer;
-  outline: none;
+a.button:hover {
+ color: #ffffff;
+}
+.button::before, .button::after {
+ content: "";
+ display: block;
+ width: 100%;
+ height: 100%;
+ background: orange;
+ position: absolute;
+ top: 0;
+ left: -100%;
+ transition: .3s;
+ z-index: -1;
+}
+.button::after {
+ background: #36d2ff;
+ top: 100%;
+ left: 0;
+ transition-delay: .2s;
+}
+.button:hover::before {
+ left: 0;
+}
+.button:hover::after {
+ top: 0;
 }
 
-.button1 {
-  background-color: white; 
-  color: black; 
-  border: 2px solid red;
+/* Анимированный чекбокс */
+.recover {
+ margin-top: 15px;
+ font-size: 12px;
+}
+label[for='ckbox'] {
+ cursor: pointer;
+ padding-left: 35px;
+ width: 250px;
+ display: block;
+ position: relative;
+}
+label[for='ckbox']::before {
+ content: '';
+ position: absolute;
+ border: 2px solid #c4c9c9;
+ width: 18px;
+ height: 18px;
+ top: 0;
+ left: 0;
+ border-radius: 3px;
+ transition: .2s;
+}
+#ckbox:checked + label::before {
+ border-top: 2px solid transparent;
+ border-left: 2px solid transparent;
+ border-right: 2px solid #408cc2;
+ border-bottom: 2px solid #408cc2;
+ transform: rotate(40deg);
+ width: 12px;
+ height: 22px;
+ transform-origin: 100% 100%;
+ top: -4px;
+ left: -5px;
+}
+#ckbox:not(:checked),
+#ckbox:checked {
+ display: none;
 }
 
-.button1:hover {
-  background-color: red;
-  color: white;
+
+.del {
+ display: none;
 }
-.container{
- 
-   width: 500px;
-   margin: 0 auto;
-   border: 1px solid red;
-   text-align: center;
-}
+
+
+
+
+
+
+
+
+
+

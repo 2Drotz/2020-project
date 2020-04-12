@@ -1,51 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Регистрация</title>
-   <link rel="shortcut icon" href="img/favicon.png" type="image/png">
-   <link rel="stylesheet" href="style.css">
+	<meta charset="UTF-8">
+	<title>Форма для авторизации</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style.css" type="text/css">
+	<script src="script.js"></script>
 </head>
-
 <body>
-   <div class="container">
-      <header>
-         <div>
-            <h1 class="h1">Регистрация на сайте</h1>
+<div class="dws-wrapper">
+	<div class="dws-form">
+		<!-- Вкладки на CSS -->
+		<input type="radio" id="tab-1" name="tabs" checked>
+		<label class="tab" for="tab-1" title="Вкладка 1">Авторизация</label>
 
+		<input type="radio" name="tabs" id="tab-2">
+		<label class="tab" for="tab-2" title="Вкладка 2">Регистрация</label>
 
-            <form action="#" method="POST" enctype="multipart/form-data">
-               <input class="text" type="text" name="login" placeholder="@mail" required>
-               <input class="password" type="password" name="parol" placeholder="password" required>
+		<!-- Вкладки на JS -->
+		<!--<label class="tab active" title="Вкладка 1">Авторизация</label>-->
+		<!--<label class="tab " title="Вкладка 2">Регистрация</label>-->
 
+		<form id="form-1" class="tab-form">
+			<div class="box-input">
+				<input class="input" type="text" required>
+				<label>Введите E-mail</label>
+			</div>
 
-               <div class="ranked">
-                  <label class="label">Твой ранг</label>
-                  <select name="color">
-                     <option value="red">Страж</option>
-                     <option selected value="pink">Рыцарь</option>
-                     <option value="yellow">Герой</option>
-                  </select>
-               </div>
+			<div class="box-input">
+				<input class="input" type="password" required>
+				<label>Введите пароль</label>
+			</div>
 
-               <div class="checkbox">
-                  <input class="checkbox" type="checkbox" required />
-                  <label>Я соглашаюсь с условиями обработки персональных данных.</label>
-               </div>
+			<a href="index-2.html" class="button">ВОЙТИ</a>
+			<ul class="social">
+				<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+				<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+				<li><a href="https://vk.com/dimasta01"><i class="fa fa-vk"></i></a></li>
+				<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+			</ul>
+			<a href="#">Я забыл свой E-mail или пароль</a>
+		</form>
 
+		<form id="form-2" class="tab-form">
+			<input class="input" type="email" placeholder="Введите E-mail адрес">
+			<input class="input" type="text" placeholder="Введите свое имя">
+			<input class="input" type="password" placeholder="Введите пароль">
+			<a href="#" class="button">Регистрация</a>
 
-               <input class="button button1" type="button" value="Войти" name="buttonreg" onClick="but3()" />
-               <script>
-                  function but3() {
-                     window.location = "index-2.html"
-                  }
-               </script>
-            </form>
+			<div class="recover">
+				<input type="checkbox" id="ckbox">
+				<label for="ckbox">Ознакомлен(-а) и принимаю <a href="#">условия регистрации</a></label>
+			</div>
+		</form>
 
-      </header>
-   </div>
+	</div>
+</div>
 </body>
-
 </html>
