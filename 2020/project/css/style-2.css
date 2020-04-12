@@ -4,8 +4,8 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: #FFFFFF;
-  
-  background: #080101 url("img/фон.png")  no-repeat 50% 0;
+  background-image: url("../img/favicon.png");
+  background: #080101 url("i")  no-repeat 50% 0;
   
 }
 
@@ -92,17 +92,17 @@ h2 {
 .feature-kitten {
   padding-top: 60px;
   font-style: normal;
-  background-image: url("img/аегис.png");
+  background-image: url("../img/аегис.png");
 }
 
 .feature-cat {
   padding-top: 60px;
-  background-image: url("img/пиво.png");
+  background-image: url("../img/пиво.png");
 }
 
 .feature-train {
   padding-top: 60px;
-  background-image: url("img/mid.png");
+  background-image: url("../img/mid.png");
 }
 
 .skills-list {
