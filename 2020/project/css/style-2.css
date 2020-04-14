@@ -23,7 +23,7 @@ h2 {
 }
 
 .site-header {
-  margin-bottom: 30px;
+  margin-top: -50px;
 }
 
 .skills-item {
@@ -177,4 +177,77 @@ h2 {
   color: black;
 
 }
+/* меню */
+.dws-menu *{
+display: contents;
+  margin-left: 660px;
+  padding: 0;
+  border-radius: 10%;
+  
+  
+ }
 
+ .dws-menu ul,
+ .dws-menu ol{
+  list-style: none;
+    margin: 0;
+    margin-top: 40px;
+    
+  
+ }
+ .dws-menu > ul{
+  display: flex;
+  justify-content: center;
+  
+  
+ }
+ .dws-menu > ul li{
+  position: relative;
+  margin: 0;
+ }
+ .fa fa-home {
+   width: 220px;
+   
+
+ }
+
+ 
+ .dws-menu > ul li a{
+  display: block;
+ background-color: #fff;
+  padding: 4px 11px 4px 11px;
+  font-size: 14px;
+  color: #454547;
+  text-decoration:dashed;
+  text-transform:uppercase;
+  transition: all 0.3s ease;
+  
+  
+ }
+ .dws-menu li a:hover{
+ background-color: #1d5f75;
+  color: #1fc;
+  box-shadow: 1px 5px 10px -5px black;
+  transition: all 0.3s ease;
+ }
+ 
+ /*sub menu*/
+ .dws-menu li ul{
+  position: absolute;
+  min-width: 150px;
+  display: none;
+  margin-top: 44px;
+  
+ }
+ 
+ .dws-menu li > ul li a{
+  padding: 10px;
+  text-transform: none;
+  background: #e4e4e5;
+  border-radius: 0;
+  border-bottom: 1px solid #777;
+ }
+
+ .dws-menu li:hover > ul{
+  display: block;
+ }

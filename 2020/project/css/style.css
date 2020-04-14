@@ -50,6 +50,7 @@ body {
 #tab-2:checked ~ #form-2 {
  display: block;
 }
+
 label.tab {
  color: #ffffff;
  font-weight: 600;
@@ -59,11 +60,13 @@ label.tab {
  margin-bottom: -1px;
  cursor: pointer;
 }
+
 label.tab.active,
 input[name="tabs"]:checked + label {
  background-color: #fff;
  color: #1d5f75;
 }
+
 input[name="tabs"] {
  display: none;
 }
